@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,25 +8,59 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1 class="headline">NUSHDev: Innovating Apps, Websites & Ethical Tools</h1>
+  <nav class="navbar">
+    <div class="logo">NUSHDev</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#team">Team</a></li>
+    </ul>
+  </nav>
 
-  <div class="cards-container">
+  <header class="hero-section">
+    <h1 class="headline">NUSHDev: Innovating Apps, Websites & Ethical Tools</h1>
+  </header>
+
+  <section id="projects" class="cards-container">
     <div class="card fade-in">
       <h2>💻 Custom Web Tools</h2>
       <p>We build sleek, fast, and interactive class and student portals tailored for NUSH.</p>
     </div>
-
     <div class="card fade-in">
       <h2>🔐 Ethical Hacking</h2>
       <p>We explore security flaws and penetration testing to improve digital safety ethically.</p>
     </div>
-
     <div class="card fade-in">
       <h2>📱 Mobile & Desktop Apps</h2>
       <p>From task planners to clicker games — NUSHDev delivers apps for students by students.</p>
     </div>
+    <div class="card fade-in">
+      <h2>🧠 AI & Automation</h2>
+      <p>We integrate ChatGPT, automation scripts, and bots to enhance everyday productivity.</p>
+    </div>
+  </section>
 
-  </div>
+  <section id="team" class="team-section">
+    <h2 class="section-title fade-in">Meet the Team</h2>
+    <div class="team-container">
+      <div class="team-member fade-in">
+        <h3>Alex</h3>
+        <p>Backend Developer</p>
+      </div>
+      <div class="team-member fade-in">
+        <h3>Jamie</h3>
+        <p>Frontend Engineer</p>
+      </div>
+      <div class="team-member fade-in">
+        <h3>Rae</h3>
+        <p>Security Analyst</p>
+      </div>
+      <div class="team-member fade-in">
+        <h3>Xin</h3>
+        <p>AI & Automation Lead</p>
+      </div>
+    </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
