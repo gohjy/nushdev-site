@@ -1,11 +1,13 @@
-window.addEventListener('scroll', () => {
-  const cards = document.querySelectorAll('.fade-in');
-  const triggerBottom = window.innerHeight * 0.9;
-
-  cards.forEach(card => {
-    const cardTop = card.getBoundingClientRect().top;
-    if (cardTop < triggerBottom) {
-      card.classList.add('appear');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('appear');
     }
   });
+}, {
+  threshold: 0.1
+});
+
+document.querySelectorAll('.fade-in').forEach(el => {
+  observer.observe(el);
 });
