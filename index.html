@@ -1,67 +1,251 @@
-<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>NUSHDev Official</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NUSHDev - Innovating the Future of Tech</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">NUSHDev</div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#team">Team</a></li>
-    </ul>
-  </nav>
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <svg class="icon-globe" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Globe icon here -->
+            </svg>
+            <span>NUSH<strong>Dev</strong></span>
+        </div>
 
-  <header class="hero-section">
-    <h1 class="headline">NUSHDev: Innovating Apps, Websites & Ethical Tools</h1>
-  </header>
+        <!-- Desktop Navigation -->
+        <div class="nav-links-desktop">
+            <button class="nav-link-button" data-scroll-to="hero">
+                <svg class="icon-home" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Home icon here -->
+                </svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-link-button" data-scroll-to="about">
+                <svg class="icon-rocket" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Rocket icon here -->
+                </svg>
+                <span>About Us</span>
+            </button>
+            <button class="nav-link-button" data-scroll-to="services">
+                <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Code icon here -->
+                </svg>
+                <span>Services</span>
+            </button>
+            <button class="nav-link-button" data-scroll-to="projects">
+                <svg class="icon-folder" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Folder icon here -->
+                </svg>
+                <span>Projects</span>
+            </button>
+            <button class="nav-link-button" data-scroll-to="contact">
+                <svg class="icon-mail" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Mail icon here -->
+                </svg>
+                <span>Contact</span>
+            </button>
+        </div>
 
-  <section id="projects" class="cards-container">
-    <div class="card fade-in">
-      <h2>💻 Custom Web Tools</h2>
-      <p>We build sleek, fast, and interactive class and student portals tailored for NUSH.</p>
-    </div>
-    <div class="card fade-in">
-      <h2>🔐 Ethical Hacking</h2>
-      <p>We explore security flaws and penetration testing to improve digital safety ethically.</p>
-    </div>
-    <div class="card fade-in">
-      <h2>📱 Mobile & Desktop Apps</h2>
-      <p>From task planners to clicker games — NUSHDev delivers apps for students by students.</p>
-    </div>
-    <div class="card fade-in">
-      <h2>🧠 AI & Automation</h2>
-      <p>We integrate ChatGPT, automation scripts, and bots to enhance everyday productivity.</p>
-    </div>
-  </section>
+        <!-- Mobile Menu Button -->
+        <div class="mobile-menu-button-container">
+            <button class="mobile-menu-button" aria-label="Toggle mobile menu">
+                <svg class="icon-menu" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for Menu icon here -->
+                </svg>
+                <svg class="icon-x hidden" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <!-- Add your SVG for X icon here -->
+                </svg>
+            </button>
+        </div>
+    </nav>
 
-  <section id="team" class="team-section">
-    <h2 class="section-title fade-in">Meet the Team</h2>
-    <div class="team-container">
-      <div class="team-member fade-in">
-        <h3>Alex</h3>
-        <p>Backend Developer</p>
-      </div>
-      <div class="team-member fade-in">
-        <h3>Jamie</h3>
-        <p>Frontend Engineer</p>
-      </div>
-      <div class="team-member fade-in">
-        <h3>Rae</h3>
-        <p>Security Analyst</p>
-      </div>
-      <div class="team-member fade-in">
-        <h3>Xin</h3>
-        <p>AI & Automation Lead</p>
-      </div>
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay hidden">
+        <button class="nav-link-button" data-scroll-to="hero">
+            <svg class="icon-home" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Home icon here -->
+            </svg>
+            <span>Home</span>
+        </button>
+        <button class="nav-link-button" data-scroll-to="about">
+            <svg class="icon-rocket" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Rocket icon here -->
+            </svg>
+            <span>About Us</span>
+        </button>
+        <button class="nav-link-button" data-scroll-to="services">
+            <svg class="icon-code" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Code icon here -->
+            </svg>
+            <span>Services</span>
+        </button>
+        <button class="nav-link-button" data-scroll-to="projects">
+            <svg class="icon-folder" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Folder icon here -->
+            </svg>
+            <span>Projects</span>
+        </button>
+        <button class="nav-link-button" data-scroll-to="contact">
+            <svg class="icon-mail" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <!-- Add your SVG for Mail icon here -->
+            </svg>
+            <span>Contact</span>
+        </button>
     </div>
-  </section>
 
-  <script src="script.js"></script>
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-blob"></div>
+        <div class="hero-blob"></div>
+        <div class="hero-content">
+            <h1>NUSHDev: <strong>Innovating</strong> the Future of Tech</h1>
+            <p>We are a team of passionate developers and ethical hackers, dedicated to crafting cutting-edge applications, secure systems, and immersive web experiences.</p>
+            <button class="hero-button" data-scroll-to="services">Explore Our Services</button>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="about-section container md:px-12 lg:px-24">
+        <div class="about-content">
+            <div class="about-text">
+                <h2>About NUSHDev: <strong>Driven by Passion</strong> for Innovation</h2>
+                <p>NUSHDev is more than just a development team; we are a collective of driven individuals from the National University of Singapore High School (NUSH), united by our passion for technology and problem-solving. From sleek web platforms to robust mobile applications and impenetrable security solutions, we thrive on transforming complex ideas into elegant, functional realities.</p>
+                <p>Our expertise spans various domains, including full-stack web development, native mobile app creation, and advanced ethical hacking techniques. We believe in continuous learning, pushing boundaries, and delivering solutions that not only meet but exceed expectations.</p>
+            </div>
+            <div class="about-image-container">
+                <img src="https://placehold.co/500x350/E0BBE4/FFFFFF?text=Team+NUSHDev" alt="NUSHDev Team" class="about-image" onerror="this.onerror=null;this.src='https://placehold.co/500x350/E0BBE4/FFFFFF?text=Team+NUSHDev';" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services-section container md:px-12 lg:px-24">
+        <div class="services-content">
+            <h2>Our <strong>Expertise</strong> & Services</h2>
+            <div class="service-cards-grid">
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <div class="service-card-icon">
+                            <svg class="icon-code" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Add your SVG for Code icon here -->
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Crafting responsive, high-performance websites and web applications tailored to your needs. From front-end design to back-end infrastructure, we build it all.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <div class="service-card-icon">
+                            <svg class="icon-rocket" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Add your SVG for Rocket icon here -->
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Mobile App Development</h3>
+                    <p>Developing intuitive and engaging mobile applications for iOS and Android, ensuring seamless user experiences and robust functionality.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <div class="service-card-icon">
+                            <svg class="icon-shield-check" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Add your SVG for Shield Check icon here -->
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>Ethical Hacking & Security</h3>
+                    <p>Identifying vulnerabilities and fortifying your digital assets against cyber threats. Our ethical hacking services ensure your systems are secure.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-card-icon-wrapper">
+                        <div class="service-card-icon">
+                            <svg class="icon-layout" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <!-- Add your SVG for Layout (UI/UX) icon here -->
+                            </svg>
+                        </div>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Designing user interfaces that are not only aesthetically pleasing but also highly intuitive and user-friendly, enhancing overall user satisfaction.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section container md:px-12 lg:px-24">
+        <div class="projects-content">
+            <h2>Our Latest <strong>Projects</strong></h2>
+            <div class="project-cards-grid">
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/CCEEFF/333333?text=Project+Alpha" alt="Project Alpha Placeholder">
+                    <h3>Project Alpha: AI Chatbot</h3>
+                    <p>Developed an intelligent chatbot powered by advanced AI algorithms to enhance customer service and automate responses.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/D1FFD1/333333?text=Project+Beta" alt="Project Beta Placeholder">
+                    <h3>Project Beta: Mobile Game</h3>
+                    <p>Created an engaging mobile game with stunning graphics and intuitive controls, launching on both iOS and Android platforms.</p>
+                </div>
+                <div class="project-card">
+                    <img src="https://placehold.co/400x250/FFD1D1/333333?text=Project+Gamma" alt="Project Gamma Placeholder">
+                    <h3>Project Gamma: Secure Cloud</h3>
+                    <p>Implemented a highly secure cloud storage solution with end-to-end encryption and robust access controls for sensitive data.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section container md:px-12 lg:px-24">
+        <div class="contact-content">
+            <h2>Get in <strong>Touch</strong></h2>
+            <p>Have a project in mind or just want to chat about tech? We'd love to hear from you!</p>
+
+            <div class="contact-options">
+                <a href="mailto:contact@nushdev.com" class="contact-email-button">
+                    <svg class="icon-mail" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <!-- Add your SVG for Mail icon here -->
+                    </svg>
+                    Send Us an Email
+                </a>
+                <p class="contact-social-text">
+                    You can also reach us through social media.
+                </p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Add your SVG for LinkedIn icon here -->
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="GitHub">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Add your SVG for GitHub icon here -->
+                        </svg>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Twitter">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+                            <!-- Add your SVG for Twitter icon here -->
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer container md:px-12 lg:px-24">
+        <p>
+            &copy; <span id="current-year"></span> NUSHDev. All rights reserved.
+        </p>
+        <p class="footer-small-text">
+            Built with passion and code.
+        </p>
+    </footer>
+
+    <script src="script.js" defer></script>
 </body>
 </html>
