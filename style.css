@@ -83,7 +83,7 @@ body {
     font-weight: 700;
     color: var(--pantone-3272);
     margin-bottom: 20px;
-    text-shadow: 0 0 15px rgba(230, 0, 122, 0.4);
+    text-shadow: 0 0 15px rgba(0,161,147, 0.4);
 }
 
 .hero-subtitle {
