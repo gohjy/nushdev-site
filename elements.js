@@ -16,7 +16,7 @@ class CommonHeader extends HTMLElement {
                 </span>
             </a>
 
-            <a href="./projects.html">Projects</a>
+            <a href="./projects">Projects</a>
             
             <a href="./contact.html">Contact</a>
         `;
@@ -33,7 +33,7 @@ class CommonFooter extends HTMLElement {
             <!-- <nav class="footer-nav"></nav> -->
 
             <div class="footer-credits">
-                Copyright &copy; NUSHDev 2025. All rights reserved.
+                Copyright &copy; NUSHDev 2025 unless otherwise stated. 
             </div>
         `;
     }
