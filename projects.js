@@ -1,5 +1,5 @@
 try {
-    const data = await fetch("./data/projects.json");
+    const data = await fetch("./projects/data/projects.json");
     const jsonData = await data.json();
 
     const projectGrid = document.querySelector(".project-grid");

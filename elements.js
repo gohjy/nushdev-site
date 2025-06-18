@@ -16,7 +16,7 @@ class CommonHeader extends HTMLElement {
                 </span>
             </a>
 
-            <a href="./projects">Projects</a>
+            <a href="./projects/">Projects</a>
             
             <a href="./contact.html">Contact</a>
         `;
