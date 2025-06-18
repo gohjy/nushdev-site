@@ -1,0 +1,15 @@
+[
+    {
+        "name": "NUSHDev Website",
+        "blurb": "The NUSHDev website to introduce you to NUSHDev!",
+        "projectPage": null,
+        "projectData": null,
+        "urls": [
+            {
+                "type": "generic",
+                "url": null
+            }
+        ],
+        "state": "developing"
+    }
+]
