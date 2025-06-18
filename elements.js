@@ -7,7 +7,7 @@ class CommonHeader extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <a href="/" class="logo-box">
+            <a href="./" class="logo-box">
                 <span class="logo-tag">
                     &lt;<span class="logo-asterisk">*</span>&gt;
                 </span>
@@ -16,9 +16,9 @@ class CommonHeader extends HTMLElement {
                 </span>
             </a>
 
-            <a href="/projects.html">Projects</a>
+            <a href="./projects.html">Projects</a>
             
-            <a href="/contact.html">Contact</a>
+            <a href="./contact.html">Contact</a>
         `;
     }
 }
