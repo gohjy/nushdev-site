@@ -170,7 +170,8 @@ h1.big { font-size: 2.5em; }
     position: sticky;
     top: 0;
     width: 100%;
-    background-color: var(--footer-bg-color);
+    background-color: transparent;
+    backdrop-filter: blur(30px);
     z-index: 9999;
 
     white-space: nowrap;
@@ -195,6 +196,11 @@ h1.big { font-size: 2.5em; }
 
 :is(.top-bar, ndv-header) a {
     color: #00ffff;
+    text-decoration-thickness: 2px;
+}
+
+:is(.top-bar, ndv-header) a:hover {
+    text-decoration-thickness: 4px;
 }
 
 .hero-container {
