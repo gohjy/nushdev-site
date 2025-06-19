@@ -28,7 +28,7 @@ installSearch({
         input = input.trim();
         console.log(el.textContent);
         if (input === "") return true;
-        let testRegex = new RegExp("\\b" + input.replace(/\s/, "\\s"), "i");
+        let testRegex = new RegExp("\\b" + RegExp.escape ? RegExp.escape(input) : input.replaceAll(/[^0-9a-zA-Z_]/g, "\\$&"), "i");
         return Array.from(el.querySelectorAll(":scope :is(h1,h2,h3,h4,h5,h6,.search-keyword,.search-tag)")).some(e=>e.textContent?.match(testRegex));
     },
     inputOptions: { searchOnInput: true }
