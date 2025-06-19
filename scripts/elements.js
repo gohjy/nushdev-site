@@ -33,7 +33,7 @@ class CommonFooter extends HTMLElement {
             <!-- <nav class="footer-nav"></nav> -->
 
             <div class="footer-credits">
-                Page content copyright &copy; NUSHDev 2025 unless otherwise stated. 
+                Page content copyright &copy; NUSHDev 2025 unless otherwise stated. NUSHDev is not endorsed by or affiliated with NUS High School.
             </div>
         `;
     }
