@@ -4,16 +4,19 @@
     --state-completed-color: #339933;
     --state-retired-color: #FFFFFF;
     --state-unknown-color: #888888;
+
+    --state-pilot-text-color: #ffffff;
+    --state-developing-text-color: #ffffff;
+    --state-completed-text-color: #ffffff;
+    --state-retired-text-color: #000000;
+    --state-unknown-text-color: #000000;
 }
 
 .state-label {
     display: inline-block;
     width: auto;
-    border-width: 1.25px;
-    border-style: solid;
-    color: var(--state-unknown-color);
     border-radius: 1em;
-    background: transparent;
+    background: var(--state-unknown-color);
     padding: 5px;
     text-transform: uppercase;
     font-size: .85em;
@@ -21,10 +24,10 @@
     margin: 5px 0 5px 0;
 }
 
-.state-label.sl-pilot { color: var(--state-pilot-color); }
-.state-label.sl-developing { color: var(--state-developing-color); }
-.state-label.sl-completed { color: var(--state-completed-color); }
-.state-label.sl-retired { color: var(--state-retired-color); }
+.state-label.sl-pilot { color: var(--state-pilot-text-color); background-color: var(--state-pilot-color); }
+.state-label.sl-developing { color: var(--state-developing-text-color); background-color: var(--state-developing-color); }
+.state-label.sl-completed { color: var(--state-completed-text-color); background-color: var(--state-completed-color); }
+.state-label.sl-retired { color: var(--state-retired-text-color); background-color: var(--state-retired-color); }
 
 .filter-proj-state * {
     width: auto;
