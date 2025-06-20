@@ -181,7 +181,7 @@ h1.big { font-size: 2.5em; }
     overflow-y: hidden;
 }
 
-:target {
+:target:not(ndv-header, .top-bar) {
     scroll-margin-top: 60px; /* +5px for extra space */
 }
 
