@@ -185,22 +185,22 @@ h1.big { font-size: 2.5em; }
     scroll-margin-top: 60px; /* +5px for extra space */
 }
 
-:where(.top-bar, ndv-header) :not(.logo-box *) {
+:is(.top-bar, ndv-header) :not(.logo-box *) {
     display: inline-block;
     width: auto;
     margin-right: 15px;
 }
 
-:where(.top-bar, ndv-header) :last-child {
+:is(.top-bar, ndv-header) :last-child {
     margin-right: 0;
 }
 
-:where(.top-bar, ndv-header) a {
+:is(.top-bar, ndv-header) a {
     color: #00ffff;
     text-decoration-thickness: 2px;
 }
 
-:where(.top-bar, ndv-header) a:hover {
+:is(.top-bar, ndv-header) a:hover {
     text-decoration-thickness: 4px;
 }
 
