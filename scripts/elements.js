@@ -16,9 +16,13 @@ class CommonHeader extends HTMLElement {
                 </span>
             </a>
 
-            <a href="./pages/projects.html">Projects</a>
-            
-            <a href="./pages/contact.html">Contact</a>
+            <div class="top-bar-menu">
+                <a href="./pages/projects.html">Projects</a>
+                
+                <a href="./pages/contact.html">Contact</a>
+
+                <a href="./pages/team.html">Team</a>
+            </div>
         `;
     }
 }
@@ -30,7 +34,16 @@ class CommonFooter extends HTMLElement {
 
     connectedCallback() {
         this.innerHTML = `
-            <!-- <nav class="footer-nav"></nav> -->
+            <nav class="footer-nav">
+                <div>
+                    <a href="./pages/home.html">NUSHDev</a>
+                    <ul>
+                        <li><a href="./pages/projects.html">Projects</a></li>
+                        <li><a href="./pages/team.html">Team</a></li>
+                        <li><a href="./pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
 
             <div class="footer-credits">
                 Page content copyright &copy; NUSHDev 2025 unless otherwise stated. NUSHDev is not endorsed by or affiliated with NUS High School.
