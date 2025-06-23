@@ -18,10 +18,10 @@ class CommonHeader extends HTMLElement {
 
             <div class="top-bar-menu">
                 <a href="./pages/projects.html">Projects</a>
-                
-                <a href="./pages/contact.html">Contact</a>
 
                 <a href="./pages/team.html">Team</a>
+                
+                <a href="./pages/contact.html">Contact</a>
             </div>
         `;
     }
